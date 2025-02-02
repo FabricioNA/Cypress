@@ -1,5 +1,5 @@
 module.exports = {
-  projectId: "StudyFNA#1",
+  projectId: "dmz8kh",
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
