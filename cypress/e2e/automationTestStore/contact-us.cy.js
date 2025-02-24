@@ -19,4 +19,12 @@ describe("Test Contact Us form via automationTestStore", () => {
         cy.get('#ContactUsFrm_enquiry').type("TesteAddCyGet")
         cy.get('.col-md-6 > .btn').click()
     })
+    it('Click in the item text', () => {
+        cy.visit("https://automationteststore.com/")
+        cy.get('.prdocutname').contains("Skinsheen Bronzer Stick").click()
+    });
+    it.only('Click in the item text', () => {
+        cy.visit("https://automationteststore.com/")
+        cy.get('.fixed_wrapper').find(".prdocutname").eq(0).click()
+    });
 });
